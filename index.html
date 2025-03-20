@@ -1,123 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP Sass 01</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cybersécurité</title>
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="./images/logo-cybersecurite.png" alt="Logo">
-        </div>
-        
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </label>
 
+<body id="top">
+    <header>
+        <a href="index.html"><img src="./images/logo-cybersecurite.png" alt="logo Cyber sécurité"></a>
+        <i class="fa-solid fa-bars"></i>
         <nav>
-            <ul class="nav-links">
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./cybersecurite.html">La Cybersécurité</a></li>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cybersecurite.html">La Cybersécurité</a></li>
                 <li><a href="#">Qui sommes-nous ?</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <article class="intro">
-                <h2>Introduction à la Cybersécurité</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, rem dolorem earum illum molestias illo architecto alias esse velit nesciunt obcaecati accusamus cumque modi aliquid vitae recusandae quo consequuntur maiores officiis. Commodi ducimus delectus aperiam alias, laborum a corporis, illum magni provident eos in. Tempora exercitationem est voluptas consequuntur quia.</p>
-            </article>
-
-            <h3>Principes Fondamentaux de la Cybersécurité</h3>
-
-            <article class="cards">
-                <div class="card">
-                    <img src="./images/image-1.jpg" alt="image-1">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+    <main id="home">
+        <div class="container">
+            <section class="main-intro">
+                <h1>Introduction à la Cybersécurité</h1>
+                <p>La cybersécurité est un aspect essentiel de nos vies numériques. Avec l'augmentation des cybermenaces, il est crucial de protéger nos données et nos systèmes contre les attaques malveillantes. Que ce soit à titre personnel, professionnel ou gouvernemental, la sécurité en ligne est devenue une priorité absolue. Les menaces telles que le piratage informatique, le vol d'identité, les logiciels malveillants et les attaques par déni de service sont de plus en plus sophistiquées et omniprésentes. C'est pourquoi il est impératif de prendre des mesures proactives pour sécuriser nos informations et préserver notre vie privée sur Internet.</p>
+            </section>
+            <section class="main-content">
+                <h2>Principes Fondamentaux de la Cybersécurité</h2>
+                <article>
+                    <div>
+                        <h3>1. Mise à jour régulière des logiciels</h3>
+                        <p>Assurez-vous que tous vos logiciels et systèmes d'exploitation sont constamment mis à jour pour bénéficier des derniers correctifs de sécurité.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-2.jpg" alt="image-2">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                        <h3>2. Utilisation de mots de passe forts</h3>
+                        <p>Adoptez des mots de passe complexes et uniques pour chaque compte, et envisagez d'utiliser des gestionnaires de mots de passe pour une sécurité accrue.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-3.jpg" alt="image-3">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                     <h3>3. Sensibilisation à la sécurité</h3>
+                        <p>Éduquez-vous et sensibilisez les membres de votre organisation aux pratiques de sécurité informatique, y compris la détection des tentatives de phishing.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-4.jpg" alt="image-4">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                        <h3>4. Utilisation d'un pare-feu</h3>
+                        <p>Installez et configurez un pare-feu sur votre réseau pour contrôler le trafic entrant et sortant et bloquer les connexions non autorisées.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-5.jpg" alt="image-5">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                        <h3>5. Sauvegarde régulière des données</h3>
+                        <p>Mettez en place des sauvegardes régulières de vos données importantes pour vous protéger contre la perte de données en cas d'attaque ou de défaillance du système.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-6.jpg" alt="image-6">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                        <h3>6. Utilisation d'une authentification à deux facteurs</h3>
+                        <p>Activez l'authentification à deux facteurs sur vos comptes en ligne pour ajouter une couche supplémentaire de sécurité en plus du mot de passe.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-7.jpg" alt="image-7">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                        <h3>7. Surveillance active des activités suspectes</h3>
+                        <p>Mettez en place des outils de surveillance pour détecter et répondre rapidement aux activités suspectes sur votre réseau ou vos systèmes.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-8.jpg" alt="image-8">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                        <h3>8. Formation continue du personnel</h3>
+                        <p>Offrez une formation régulière à votre personnel sur les dernières menaces en matière de cybersécurité et sur les bonnes pratiques à adopter pour prévenir les attaques.</p>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/image-9.jpg" alt="image-9">
-                    <div class="card-text">
-                        <p class="card-subtitle">1.Mise à jour régulière des logiciels</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae non, quis et porro repudiandae! Ad sed aut odio eius!</p>
+                </article>
+                <article>
+                    <div>
+                        <h3>9. Politiques de sécurité claires</h3>
+                        <p>Élaborez et mettez en œuvre des politiques de sécurité informatique claires et applicables pour guider le comportement des utilisateurs et des administrateurs.</p>
                     </div>
-                </div>
-            </article>
-            
-        </section>
+                </article>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <div>
-            <p>&copy; Copyright - Charlène Delporte- 3W Academy</p>
-        </div>
+        <small>© Copyright - Charlène Delporte - 3W Academy</small>
     </footer>
+
+    <a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="https://kit.fontawesome.com/0ff3ab6b3d.js" crossorigin="anonymous"></script>
 </body>
 </html>

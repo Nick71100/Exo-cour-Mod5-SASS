@@ -1,0 +1,65 @@
+@import 'variables';
+
+body {
+  font-family: $text;
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $title;
+  color: $primary-color;
+}
+h1 {
+  margin: 1rem;
+  font-size: 1.5em; 
+  font-weight: bold; 
+}
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main .main-intro {
+  margin: 3rem auto;
+  text-align: center;
+
+  @media screen and (min-width: 11024px) {
+    width: 75%;
+  }
+}
+main .main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fa-solid.fa-arrow-up  {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $light-color;
+  font-size: 2rem;
+  color: $light-color;
+  background-color: $dark-color;
+  position: fixed;
+  bottom: 2rem; right: 0;
+}

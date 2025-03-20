@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP Sass 01</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cybersécurité</title>
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="./images/logo-cybersecurite.png" alt="Logo">
-        </div>
-        
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </label>
 
+<body id="top">
+    <header>
+        <a href="index.html"><img src="./images/logo-cybersecurite.png" alt="logo Cyber sécurité"></a>
+        <i class="fa-solid fa-bars"></i>
         <nav>
-            <ul class="nav-links">
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./cybersecurite.html">La Cybersécurité</a></li>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cybersecurite.html">La Cybersécurité</a></li>
                 <li><a href="#">Qui sommes-nous ?</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section>
-            <article class="intro">
-                <h2>Introduction à la Cybersécurité</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, rem dolorem earum illum molestias illo architecto alias esse velit nesciunt obcaecati accusamus cumque modi aliquid vitae recusandae quo consequuntur maiores officiis. Commodi ducimus delectus aperiam alias, laborum a corporis, illum magni provident eos in. Tempora exercitationem est voluptas consequuntur quia.</p>
-            </article>
-
-            <h3>Quelques vidéos explicatives</h3>
-
-            <article class="cards">
-                <div class="card">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uoogZrxncqY?si=BRSWoK25r3Zzj6yN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
-                    <p>Sécurisez vos mots de passe</p>
-                </div>
-                <div class="card"></div>
-                <div class="card"></div>
-            </article>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <p>&copy; Copyright - Charlène Delporte- 3W Academy</p>
+    <main id="security">
+        <div class="container">
+            <section class="main-intro">
+                <h1>Introduction à la Cybersécurité</h1>
+                <p>La cybersécurité est un aspect essentiel de nos vies numériques. Avec l'augmentation des cybermenaces, il est crucial de protéger nos données et nos systèmes contre les attaques malveillantes. Que ce soit à titre personnel, professionnel ou gouvernemental, la sécurité en ligne est devenue une priorité absolue. Les menaces telles que le piratage informatique, le vol d'identité, les logiciels malveillants et les attaques par déni de service sont de plus en plus sophistiquées et omniprésentes. C'est pourquoi il est impératif de prendre des mesures proactives pour sécuriser nos informations et préserver notre vie privée sur Internet.</p>
+            </section>
+            <section class="main-content">
+                <h2>Quelques vidéos explicatives</h2>
+                <article>
+                  <iframe src="https://www.youtube.com/embed/uoogZrxncqY?si=AgDr7-PbTX4s3ihm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <h3>C'est quoi la cyber-sécurité ?</h3>
+                </article>
+                <article>
+                  <iframe src="https://player.vimeo.com/video/882025615?h=8a9802ef6c&color=62d8a0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  <h3>Sécuriser vos mots de passe</h3>
+                </article>
+                <article>
+                  <video src="./video/intrusion.mp4" controls>
+                    Votre navigateur ne prend pas en charge les vidéos HTML5,
+                    merci d'utiliser un navigateur plus récent.
+                  </video>
+                  <h3>Propagation d'une intrusion</h3>
+                </article>
+            </section>
         </div>
+    </main>
+    <footer>
+        <small>© Copyright - Charlène Delporte - 3W Academy</small>
     </footer>
+    <a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="https://kit.fontawesome.com/0ff3ab6b3d.js" crossorigin="anonymous"></script>
 </body>
 </html>
